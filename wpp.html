@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas e Respostas</title>
+    <style>
+        body { 
+            background-color: gray;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #FF69B4;
+        }
+        .answer {
+            display: none;
+        }
+        .whatsapp-link {
+            display: none;
+            margin-top: 20px;
+        }
+        .click-here-button {
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .rosa-button {
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body background="grey">
+    <h1>Perguntas e Respostas</h1>
+
+    <div class="question" id="q1" onclick="toggleAnswer('r1')">
+        <h2>Se eu te odeio?</h2>
+        <button class="click-here-button">Minha gatinha?</button>
+        <p class="answer" id="r1">Eu não te odeio sabe? Voce é uma pessoa incrivel<br> Gosto de falar com voce</p>
+    </div>
+
+    <div class="question" id="q2" onclick="toggleAnswer('r2')">
+        <h2>Porque quero voce? ou Porque eu to afim de voce?</h2>
+        <button class="click-here-button">Para Voce </button>
+        <p class="answer" id="r2">Porque encontrei algo em voce que me deixou muito interessada<br>E oq seria isso? olha pra voce, uma pessoa foda,
+         so sei que to interessada. <br> Voce é sincera sabe?<br> 
+        <br> E voce chama muito minha atenção. Quero realmente de conhecer<br>  </p>
+    </div>
+
+    <div class="question" id="q3" onclick="toggleAnswer('r3')">
+        <h2>Sobre voce</h2>
+        <button class="click-here-button">HABLEI</button>
+        <p class="answer" id="r3">Voce é uma pessoa boa, incrivel, forte e guerreira.<br> Sua voz é linda, gostosa pra krlho<br> E voce é linda, muita area para mim, sabe quando voce tem um grafico? eu to lá embaixo e voce 
+            está lá em cima. E eu te acho muito legal, vc sabe conversar, e eu quero aprender muitas coisas com voce <br> OBS: não quero te iludir<br>  <br> </p>
+    </div> 
+
+    <div class="question" id="q4" onclick="toggleAnswer('r4')">
+        <h2>Sobre mim (previa) </h2>
+        <button class="click-here-button">Eu</button>
+        <p class="answer" id="r4">Eu tenho muito medo de ser trocada, e com isso acaba agindo meio que na imaturidade<br> 
+        mas não é por mal, eu sou ciumenta sim, pra krlho, tenhop medo de altura, de bichos.<br> Tenho ansiedade pra krlho, as vezes eu não consigo controlar<br> 
+     e eu quase fiquei com isso por uma coisa que aconteceu hoje, vc sabe....<Br> 
+    <br> Uma qualidade minha? Amo ajudar </p>
+    </div>
+
+    <a href="https://wa.me/5511937781104" target="_blank"><button class="rosa-button">Vem cá</button></a>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+            document.getElementById('whatsapp-link').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
